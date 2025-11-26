@@ -1,16 +1,27 @@
 import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 
 interface AppCardProps {
-  img: string;
-  title: string;
-  desc: string;
+  IconComponent: React.ElementType
+  title: string
+  desc: string
+  url: string
 }
 
-export function AppCard({ img, title, desc }: AppCardProps) {
+export function AppCard({ IconComponent, title, desc, url }: AppCardProps) {
   return (
     <div>
-        
+        <div>
+            {<IconComponent />}
+        </div>
+        <p>{title}</p>
+        <p>{desc}</p>
+
+        <div>
+            <button>Try Now</button>
+        </div>
     </div>
    
   );

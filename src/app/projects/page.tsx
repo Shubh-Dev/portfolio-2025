@@ -1,7 +1,11 @@
+import AppCard from "@/components/app-card"
+import { title } from "process";
+import { LuTestTubeDiagonal } from "react-icons/lu";
+
 export function Projects () {
     return (
         <div>
-            This is projects page
+            <AppCard IconComponent={<LuTestTubeDiagonal />} title="test title" desc="test desc" url="sample url" />
         </div>
     )
 }
