@@ -14,6 +14,7 @@ import {
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
+import Link from "next/link";
 
 const NAV_MENU = [
   {
@@ -28,6 +29,11 @@ const NAV_MENU = [
     name: "Docs",
     icon: CommandLineIcon,
     href: "https://www.material-tailwind.com/docs/react/installation",
+  },
+  {
+    name: "Projects",
+    icon:  RectangleStackIcon,
+    href: "/projects",
   },
 ];
 
